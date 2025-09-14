@@ -10,7 +10,6 @@
 ![Rust](https://img.shields.io/badge/Rust-1.70+-orange?logo=rust&logoColor=white)
 ![Axum](https://img.shields.io/badge/Axum-0.7-blue?logo=rust&logoColor=white)
 ![SQLx](https://img.shields.io/badge/SQLx-0.7-green?logo=sqlite&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
 </div>
 
