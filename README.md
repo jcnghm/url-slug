@@ -34,11 +34,11 @@ A URL shortening service built with Rust and Axum. Transform long URLs into shor
 ### Installation
 
 1. Clone the repository:
-git clone https://github.com/jcnghm/url-slug.git
-cd url-slug
+`git clone https://github.com/jcnghm/url-slug.git`
+`cd url-slug`
 
 2. Run the application:
-cargo run
+`cargo run`
 
 The server will start on `http://localhost:3000`
 
