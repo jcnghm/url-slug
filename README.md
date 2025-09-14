@@ -1,7 +1,7 @@
 # URL Slug
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/rust-lang/rustacean.net/master/assets/rustacean-flat-noshadow.svg" width="150" alt="Axum Logo">
+  <img src="https://raw.githubusercontent.com/tokio-rs/axum/main/axum.svg" width="150" alt="Axum Logo">
 </div>
 
 <div align="center">
