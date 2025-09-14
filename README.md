@@ -42,72 +42,6 @@ cargo run
 
 The server will start on `http://localhost:3000`
 
-## API Endpoints
-
-### Create a Slug
-
-Create a new short URL from a long URL.
-
-**Request:**
-POST /shorten
-Content-Type: application/json
-
-{
-  "url": "https://www.example.com/very/long/path"
-}
-
-**Response:**
-{
-  "slug": "a1B2c3",
-  "short_url": "http://localhost:3000/a1B2c3"
-}
-
-### Redirect to Original URL
-
-Access a slug to be redirected to the original URL. This increments the click counter.
-
-**Request:**
-GET /{slug}
-
-**Response:**
-HTTP/1.1 301 Moved Permanently
-Location: https://www.example.com/very/long/path
-
-### Get Slug Statistics
-
-Retrieve analytics data for a specific slug.
-
-**Request:**
-GET /stats/{slug}
-
-**Response:**
-{
-  "original_url": "https://www.example.com/very/long/path",
-  "slug": "a1B2c3",
-  "click_count": 42
-}
-
-## Testing
-
-### Using cURL
-
-# Create a slug
-curl -X POST http://localhost:3000/shorten \
-  -H "Content-Type: application/json" \
-  -d '{"url":"https://github.com"}'
-
-# Test redirect
-curl -L http://localhost:3000/YOUR_SLUG
-
-# Check statistics
-curl http://localhost:3000/stats/YOUR_SLUG
-
-### Using Postman
-
-1. **Create Slug**: POST to `/shorten` with JSON body containing the URL
-2. **Test Redirect**: GET the slug endpoint
-3. **View Stats**: GET `/stats/{slug}` to see click analytics
-
 ## Dependencies
 
 - **Axum**: Modern, ergonomic web framework
@@ -131,14 +65,6 @@ The API returns appropriate HTTP status codes:
 - `400 Bad Request`: Invalid URL provided
 - `404 Not Found`: Slug not found
 - `500 Internal Server Error`: Database or server error
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## Usage
 
