@@ -1,6 +1,5 @@
-# URL Slug
-
 <div align="center">
+  # URL Slug
   <img src="https://raw.githubusercontent.com/rust-lang/rust-artwork/master/logo/rust-logo-256x256.png" alt="Rust Logo" width="100">
 
 </div>
