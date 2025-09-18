@@ -13,7 +13,7 @@
 
 </div>
 
-A URL shortening service built with Rust and Axum. Transform long URLs into short, shareable slugs with built-in click tracking and analytics.
+A URL shortener built with Rust and Axum. Transform long URLs into short, shareable slugs with built-in click tracking and analytics.
 
 ## Features
 
